@@ -1,6 +1,6 @@
 ---
 layout: bare
-title: Crownlands - Clinical Assessment and Outcomes Voice Data (Preview)
+browser_title: Crownlands - Clinical Assessment and Outcomes Voice Data (Preview)
 permalink: /docs/clinical-assessment-preview/
 ---
 
@@ -71,7 +71,7 @@ Sample cases:
 
 Each assessment is conducted and scored by a highly trained, experienced physician, with ground truth available for every assessment.
 
-The sample is delivered as a data file, available after a privacy agreement, and a Python evaluation package. In the evaluation package, audio and transcripts can be subsegmented by assessment task and scored against ground truth. Onboarding data is available separately.
+The sample is delivered as a data file, available after a privacy agreement, and a Python evaluation package. In the evaluation package, audio and transcripts can be subsegmented by assessment task and scored against ground truth. Onboarding data is available separately. Please contact your organization's point of contact with Crownlands if you do not have the org-specific download link.
 
 
 #### Health Data Provenance and Privacy: 
