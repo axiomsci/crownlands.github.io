@@ -2,6 +2,8 @@ title: Crownlands
 
 theme: minima
 
+header_pages: []
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
