@@ -1,0 +1,74 @@
+---
+# Only the main Sass file needs front matter.
+---
+
+$text-color: #d6d9df;
+$background-color: #0d1117;
+$brand-color: #7bb7ff;
+$grey-color: #9da7b3;
+$grey-color-light: #30363d;
+$grey-color-dark: #f0f3f6;
+
+@import "minima";
+
+body {
+  background-color: $background-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  color: #f0f3f6;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+h5 {
+  color: #9da7b3;
+  font-weight: 400;
+}
+
+a:visited {
+  color: #c09cff;
+}
+
+table {
+  color: $text-color;
+}
+
+tr:nth-child(even) {
+  background-color: #121820;
+}
+
+details {
+  margin: 16px 0;
+  padding: 13px 16px;
+  border: 1px solid #30363d;
+  border-radius: 5px;
+  background-color: #121820;
+}
+
+summary {
+  cursor: pointer;
+  color: #f0f3f6;
+  font-weight: 600;
+}
+
+pre,
+code {
+  border-color: #30363d;
+  background-color: #161b22;
+  color: #e6edf3;
+}
+
+pre code {
+  border: 0;
+  background-color: transparent;
+}
