@@ -45,11 +45,11 @@ table {
   color: $text-color;
 }
 
-th {
+table th {
   background-color: #121820;
 }
 
-tr:nth-child(even) {
+table tr:nth-child(even) {
   background-color: transparent;
 }
 
