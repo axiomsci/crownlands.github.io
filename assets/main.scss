@@ -32,7 +32,9 @@ h4 {
 
 h5 {
   color: #9da7b3;
+  font-size: 18px;
   font-weight: 400;
+  line-height: 1.4;
 }
 
 a:visited {
@@ -43,8 +45,12 @@ table {
   color: $text-color;
 }
 
-tr:nth-child(even) {
+th {
   background-color: #121820;
+}
+
+tr:nth-child(even) {
+  background-color: transparent;
 }
 
 details {
