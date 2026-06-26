@@ -29,7 +29,7 @@ Task medical details:
   <summary>Scoring Task A: <b>NPI-Q</b> </summary>
   This is the hidden text or content that drops down.
 </details>
-<newline>
+<br>
 
 
 <details>
@@ -37,12 +37,12 @@ Task medical details:
   This is the hidden text or content that drops down.
 </details>
 
-<newline>
+<br>
 <details>
   <summary>Clinical Judgement Task: <b>CDR</b> </summary>
   This is the hidden text or content that drops down.
 </details>
-<newline>
+<br>
 
 
 #### Health Data Provenance and Privacy: 
