@@ -5,13 +5,13 @@ permalink: /docs/clinical-assessment-preview/
 ---
 
 # Crownlands - Clinical Assessment and Outcomes Voice Data (Preview)
-##### Audio from clinician-patient visits with structured interviews → clinician's assessment of the patient.
+<h5>Audio from clinician-patient visits with structured interviews → clinician's assessment of the patient.</h5>
 
 **What to know:** This dataset is a trove of long-duration patient visits where a doctor assesses a patient's health in a structured way. Along with real-world medical conversation, these interactions have hard outcomes. In patient care and in clinical trials, clinical scoring systems are used to standardize diagnostic staging and measure longitudinal progression. This dataset contains recorded visits where a physician scores patients on these metrics. This is a task that should be trained - correct measurement requires the application of clinical judgement, and the administration and grading of these cognitive assessments are near-term steps towards AI doctors holistically diagnosing patients. 
 
 **Training Goal:** This dataset trains (voice) models on clinical conduct with patients and how physicians assess patient symptoms and behavior. Improvement on the clinical assessment task requires careful objective scoring of responses and holistic clinical judgement.
 
-#### Contents:
+#### In this dataset preview:
 With each available clinical visit:
 
 <table>
@@ -37,8 +37,6 @@ Sample medical assessment details:
   The NPI-Q asks the <i>informant</i> (the patient's caregiver) about 12 symptoms. Each is either rated absent (No), or present (Yes), in which case its severity is rated on a 3-point scale and the caregiver's distress is rated on a 5-point scale.<br><br>
   The NPI-Q takes 3-8 minutes to administer.
 </details>
-<br>
-
 
 <details>
   <summary>Scoring Task B: <b>GDS</b> </summary>
@@ -47,7 +45,6 @@ Sample medical assessment details:
   The GDS takes 2-3 minutes to administer.
 </details>
 
-<br>
 <details>
   <summary>Clinical Judgement Task: <b>CDR</b> </summary>
   The Clinical Dementia Rating (CDR) Scale stages dementia and Alzheimer's disease. It is the primary outcome measurement in most late-stage clinical trials of Alzheimer's disease therapeutics.<br><br>
@@ -55,7 +52,6 @@ Sample medical assessment details:
   Clinical judgement is used to turn these interviews into a final score, which uses a 6-category rubric. For example, "Memory" is rated 0 for "No memory loss, or slight inconsistent forgetfulness," 0.5 for "Consistent slight forgetfulness; partial recollection of events; "benign" forgetfulness," ..., 2 for "Severe memory loss; only highly learned material retained; new material rapidly lost," and 3 for "Severe memory loss; only fragments remain." You can see the rubric (here)[https://knightadrc.wustl.edu/app/uploads/2021/06/CDR-Table.pdf]. These six scores or "boxes" can be converted into a final score, for example with a sum (sum of boxes, CDR-SB).<br><br>
   The CDR takes 50-75 minutes to administer. 
 </details>
-<br>
 
 
 #### Sample Download:
@@ -84,10 +80,10 @@ In this dataset, the human health data is "first-party" - meaning Crownlands spo
 Per Crownlands policy, all users must agree not to attempt re-identification of the patients or speakers in order to access the dataset.
 
 
-```
+<pre><code>
 HUMAN DATA PROVENANCE
 
 Patient consent  .----. ___ .----.   Crownlands serves
 in Crownlands   (     ()   ()     )  de-ID data
-study            `----' ‾‾‾ `----'
-```
+study            &#96;----' ‾‾‾ &#96;----'
+</code></pre>
