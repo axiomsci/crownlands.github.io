@@ -12,22 +12,25 @@ permalink: /docs/clinical-assessment-preview/
 **Training Goal:** This dataset trains (voice) models on clinical conduct with patients and how physicians assess patient symptoms and behavior. Improvement on the clinical assessment task requires careful objective scoring of responses and holistic clinical judgement.
 
 #### In this dataset preview:
-With each available clinical visit:
 
-<table>
-  <tr>
-    <td>Three speakers: doctor, patient, caregiver </td>
-  </tr>
-  <tr>
-    <td>1-2 hours duration per visit</td>
-  </tr>
-  <tr>
-    <td>Three clinical assessments: see below </td>
-  </tr>
-</table>
+| Included | Description |
+| --- | --- |
+| Compliance | First-party, de-identified |
+| Speakers | Physician, patient, caregiver |
+| Duration | Approximately 2-3 hours per visit |
+| Assessments | Three clinical assessments per visit |
+| Labels | Physician-scored ground truth |
+| Modalities | Audio, with timestamped transcripts where available |
 
+Each recording contains three clinical/cognitive assessments, conducted as structured interviews. Two are scoring tasks with direct yes/no or choice-based responses. The longest task is a clinical judgment task, where the physician uses a structured interview and expert interpretation to assign final symptom ratings.
 
-Each recording contains three clinical/cognitive assessments, conducted as structured interviews. Two of these tasks are **_scoring tasks_**, which have multiple yes/no/choice questions. The longest task is a **_clinical judgement task_**, which follows a structured interview but relies un the clinician's expert judgement to determine the final symptom rating.
+#### Assessment Tasks:
+
+| Assessment | What it measures | Why it matters |
+| --- | --- | --- |
+| NPI-Q | Caregiver-reported neuropsychiatric symptoms | Tests whether a model can track caregiver observations and convert them into structured symptom ratings |
+| GDS | Patient-reported depression symptoms | Tests whether a model can follow short clinical screening questions and score patient responses |
+| CDR | Dementia staging through physician judgment | Tests whether a model can reason across a long interview and map evidence to a clinical rubric |
 
 Sample medical assessment details:
 
