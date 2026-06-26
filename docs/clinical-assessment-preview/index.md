@@ -1,25 +1,22 @@
-## Crownlands - Clinical Assessment and Outcomes Voice Data (Preview)
+# Crownlands - Clinical Assessment and Outcomes Voice Data (Preview)
 ##### Audio from clinician-patient visits with structured interviews → clinician's assessment of the patient.
 
-**What to know:** This dataset is a trove of long-duration patient visits where a doctor assesses a patient's health in a structured way. Along with medical conversation, these interactions have hard outcomes. In clinical trials and in patient care, clinical scoring systems are used to standardize disease staging and measure longitudinal progression. This dataset contains recorded visits of a physician scoring patients on these metrics. This is a task that should be trained - correct measurement requires the application of clinical judgement. These cognitive assessments are a near-term step towards AI doctors assessing and diagnosing patients. 
+**What to know:** This dataset is a trove of long-duration patient visits where a doctor assesses a patient's health in a structured way. Along with real-world medical conversation, these interactions have hard outcomes. In patient care and in clinical trials, clinical scoring systems are used to standardize diagnostic staging and measure longitudinal progression. This dataset contains recorded visits where a physician scores patients on these metrics. This is a task that should be trained - correct measurement requires the application of clinical judgement, and the administration and grading of these cognitive assessments are near-term steps towards AI doctors holistically diagnosing patients. 
 
 **Training Goal:** This dataset trains (voice) models on clinical conduct with patients and how physicians assess patient symptoms and behavior. Improvement on the clinical assessment task requires careful objective scoring of responses and holistic clinical judgement.
 
 #### Contents:
-During each available clinical visit:
+With each available clinical visit:
 
 <table>
   <tr>
-    <td>Speakers</td>
-    <td>3 - doctor, patient, partner </td>
+    <td>Three speakers - doctor, patient, partner (informant) </td>
   </tr>
   <tr>
-    <td>Duration</td>
-    <td>1-2 hours</td>
+    <td>1-2 hours duration per visit</td>
   </tr>
   <tr>
-    <td>Assessments</td>
-    <td>3 - see below </td>
+    <td>Three independent assessments - see below </td>
   </tr>
 </table>
 
@@ -32,6 +29,7 @@ Task medical details:
   <summary>Scoring Task A: <b>NPI-Q</b> </summary>
   This is the hidden text or content that drops down.
 </details>
+<newline>
 
 
 <details>
@@ -39,11 +37,12 @@ Task medical details:
   This is the hidden text or content that drops down.
 </details>
 
-
+<newline>
 <details>
-  <summary>Clinical Judgement Task: <b>GDS</b> </summary>
+  <summary>Clinical Judgement Task: <b>CDR</b> </summary>
   This is the hidden text or content that drops down.
 </details>
+<newline>
 
 
 #### Health Data Provenance and Privacy: 
