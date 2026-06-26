@@ -5,7 +5,13 @@ permalink: /docs/clinical-assessment-preview/
 ---
 
 # Crownlands - Clinical Assessment and Outcomes Voice Data (Preview)
-<h5>Audio from clinician-patient visits with structured interviews → clinician's assessment of the patient.</h5>
+<h5>Long-form clinician-patient-caregiver visits with physician-scored clinical outcomes.</h5>
+
+This dataset preview is designed for AI labs evaluating whether voice and multimodal models can move beyond transcription into clinical assessment. Each visit contains natural, long-duration medical conversation between a physician, patient, and caregiver, paired with structured scores produced by the physician during the visit.
+
+The core task is to convert messy clinical dialogue into the kinds of measurements used in care and clinical trials. Some assessments are direct scoring tasks, where the model must identify answers and assign structured ratings. Others require clinical judgment: the model must follow a long interview, weigh patient and caregiver responses, and map the conversation onto a clinical rubric.
+
+This makes the dataset useful for training and evaluating models on three capabilities that matter for medical AI: listening across long encounters, tracking multiple speakers and informants, and producing clinically meaningful outputs with physician-scored ground truth.
 
 **What to know:** This dataset is a trove of long-duration patient visits where a doctor assesses a patient's health in a structured way. Along with real-world medical conversation, these interactions have hard outcomes. In patient care and in clinical trials, clinical scoring systems are used to standardize diagnostic staging and measure longitudinal progression. This dataset contains recorded visits where a physician scores patients on these metrics. This is a task that should be trained - correct measurement requires the application of clinical judgement, and the administration and grading of these cognitive assessments are near-term steps towards AI doctors holistically diagnosing patients. 
 
