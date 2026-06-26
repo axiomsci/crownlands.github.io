@@ -1,1 +1,1 @@
-Navigate to [crownlands.com](www.crownlands.com) to learn more.
+Navigate to [crownlands.com](https://www.crownlands.com) to learn more.
