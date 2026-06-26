@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: bare
 title: Crownlands - Clinical Assessment and Outcomes Voice Data (Preview)
 permalink: /docs/clinical-assessment-preview/
 ---
@@ -56,6 +56,22 @@ Sample medical assessment details:
   The CDR takes 50-75 minutes to administer. 
 </details>
 <br>
+
+
+#### Sample Download:
+The preview sample includes nine scored clinical assessments across three patients, with one complete, de-identified clinical visit recording per patient. Each recording includes audio. Timestamped transcripts with tracked speaker labels are included where available, but the full transcript and speaker attribution are not guaranteed.
+
+Sample cases:
+
+| Full Visit | Duration | Assessments |
+| --- | --- | --- |
+| case_714 | 166.2 min / 2.77 hr | Three |
+| case_754 | 145.5 min / 2.42 hr | Three |
+| case_214 | 117.3 min / 1.96 hr | Three |
+
+Each assessment is conducted and scored by a highly trained, experienced physician, with ground truth available for every assessment.
+
+The sample is delivered as a data file, available after a privacy agreement, and a Python evaluation package. In the evaluation package, audio and transcripts can be subsegmented by assessment task and scored against ground truth. Onboarding data is available separately.
 
 
 #### Health Data Provenance and Privacy: 
