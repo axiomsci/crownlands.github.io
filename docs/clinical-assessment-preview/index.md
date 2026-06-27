@@ -5,7 +5,7 @@ permalink: /docs/clinical-assessment-preview/
 ---
 
 # Crownlands - Clinical Assessment and Outcomes Voice Data (Preview)
-<h5>Long-form clinician-patient-caregiver visits with physician-scored clinician-reported outcomes.</h5>
+<h5>Long-form medical visits with physician-scored outcomes and clinical judgment.</h5>
 
 This dataset preview supports evaluation of whether voice and multimodal models can move beyond transcription into clinical assessment. Each visit contains real, long-duration medical conversation between a physician, patient, and caregiver, paired with structured clinician-reported outcomes, or ClinROs: scores produced by the physician during or immediately after the visit.
 
