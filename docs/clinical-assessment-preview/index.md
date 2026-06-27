@@ -13,7 +13,7 @@ The core task is to convert real-world clinical dialogue into the kinds of measu
 
 This makes the dataset useful for training and evaluating models on a clinically important category of work: generating structured outcomes from real medical encounters. Models must listen across long visits, track multiple speakers and informants, and produce outputs that can be scored against physician ground truth.
 
-**Why this matters:** ClinROs train core skills of doctoring. Doctors talk with patients to help patients understand their health and to gather the information needed for care. ClinROs are a verifiable training set for the second purpose, clinical information gathering.
+**Why this matters:** ClinROs train core skills of doctoring. A physician has to talk with the patient, understand their health, gather the information needed for care, and explain what is happening. This dataset makes the information-gathering part of that work verifiable.
 
 In this dataset, the physician interacts with the patient over 1-3 hours, elicits symptom reports from the patient and caregiver, interprets the patient's health status, and turns the visit into a structured clinical report.
 
@@ -80,7 +80,7 @@ Sample cases:
 | case_754 | 145.5 min / 2.42 hr | Three |
 | case_214 | 117.3 min / 1.96 hr | Three |
 
-Each assessment is conducted and scored by a highly trained, experienced physician, with ground truth available for every assessment.
+Each assessment is conducted and scored by a physician, with ground truth available for every assessment.
 
 The sample is delivered as a downloadable data package, available after a privacy agreement, and a Python evaluation package. In the evaluation package, audio and transcripts can be subsegmented by assessment task and scored against ground truth.
 
