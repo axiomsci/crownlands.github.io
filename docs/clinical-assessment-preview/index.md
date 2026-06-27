@@ -7,9 +7,9 @@ permalink: /docs/clinical-assessment-preview/
 # Crownlands - Clinical Assessment and Outcomes Voice Data (Preview)
 <h5>Long-form clinician-patient-caregiver visits with physician-scored clinician-reported outcomes.</h5>
 
-This dataset preview supports evaluation of whether voice and multimodal models can move beyond transcription into clinical assessment. Each visit contains natural, long-duration medical conversation between a physician, patient, and caregiver, paired with structured clinician-reported outcomes, or ClinROs: scores produced by the physician during or immediately after the visit.
+This dataset preview supports evaluation of whether voice and multimodal models can move beyond transcription into clinical assessment. Each visit contains real, long-duration medical conversation between a physician, patient, and caregiver, paired with structured clinician-reported outcomes, or ClinROs: scores produced by the physician during or immediately after the visit.
 
-The core task is to convert messy clinical dialogue into the kinds of measurements used in care and clinical trials. Some assessments are direct scoring tasks, where the model must identify answers and assign structured ratings. Others require clinical judgment: the model must follow a long interview, weigh patient and caregiver responses, and map the conversation onto a clinical rubric.
+The core task is to convert real-world clinical dialogue into the kinds of measurements used in care and clinical trials. Some assessments are direct scoring tasks, where the model must identify answers and assign structured ratings. Others require clinical judgment: the model must follow a long interview, weigh patient and caregiver responses, and map the conversation onto a clinical rubric.
 
 This makes the dataset useful for training and evaluating models on a clinically important category of work: generating structured outcomes from real medical encounters. Models must listen across long visits, track multiple speakers and informants, and produce outputs that can be scored against physician ground truth.
 
@@ -76,13 +76,13 @@ Sample cases:
 
 | Full Visit | Duration | Assessments |
 | --- | --- | --- |
-| case_714 | 166.2 min / 2.77 hr | Three |
+| case_740 | 166.2 min / 2.77 hr | Three |
 | case_754 | 145.5 min / 2.42 hr | Three |
 | case_214 | 117.3 min / 1.96 hr | Three |
 
 Each assessment is conducted and scored by a highly trained, experienced physician, with ground truth available for every assessment.
 
-The sample is delivered as a data file, available after a privacy agreement, and a Python evaluation package. In the evaluation package, audio and transcripts can be subsegmented by assessment task and scored against ground truth. Onboarding data is available separately.
+The sample is delivered as a data file, available after a privacy agreement, and a Python evaluation package. In the evaluation package, audio and transcripts can be subsegmented by assessment task and scored against ground truth.
 
 Please contact your organization's point of contact with Crownlands if you do not have the org-specific download link.
 
