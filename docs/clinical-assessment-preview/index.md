@@ -9,7 +9,7 @@ permalink: /docs/clinical-assessment-preview/
 
 This dataset preview supports evaluation of whether voice and multimodal models can move beyond transcription into clinical assessment. Each visit contains real, long-duration medical conversation between a physician, patient, and caregiver, paired with structured clinician-reported outcomes, or ClinROs: scores produced by the physician during or immediately after the visit.
 
-The core task is to convert real-world clinical dialogue into the kinds of measurements used in care and clinical trials. Some assessments are direct scoring tasks, where the model must identify answers and assign structured ratings. Others require clinical judgment: the model must follow a long interview, weigh patient and caregiver responses, and map the conversation onto a clinical rubric.
+The core task is to convert real-world clinical dialogue into the kinds of measurements used in care and clinical trials. Some assessments are extraction tasks, where the model must identify answers and assign structured ratings. Others require clinical judgment: the model must follow a long interview, weigh patient and caregiver responses, and map the conversation onto a clinical rubric.
 
 This makes the dataset useful for training and evaluating models on a clinically important category of work: generating structured outcomes from real medical encounters. Models must listen across long visits, track multiple speakers and informants, and produce outputs that can be scored against physician ground truth.
 
@@ -30,13 +30,13 @@ These measurements are used daily in patient triage, longitudinal monitoring, sp
 | Labels | Physician-scored ground truth; physician contemporaneous notes; cognitive-disease blood biomarkers available on request |
 | Modalities | Audio; speaker-resolved transcripts |
 
-Each recording contains three clinical/cognitive assessments, conducted as structured interviews. Two are scoring tasks with direct yes/no or choice-based responses. The longest task is a clinical judgment task, where the physician uses a structured interview and expert interpretation to assign final symptom ratings.
+Each recording contains three clinical/cognitive assessments, conducted as structured interviews. Two are extraction tasks with direct yes/no or choice-based responses. The longest task is a clinical judgment task, where the physician uses a structured interview and expert interpretation to assign final symptom ratings.
 
 #### Assessment Tasks:
 
 | Task type | Assessments | Description |
 | --- | --- | --- |
-| Scoring tasks | GDS, NPI-Q | Document responses on patient- and caregiver-reported neuropsychiatric symptoms, respectively |
+| Extraction tasks | GDS, NPI-Q | Document responses on patient- and caregiver-reported neuropsychiatric symptoms, respectively |
 | Clinical judgement task | CDR | Long interview which requires clinical interpretation to report dementia staging across six metrics |
 
 Sample medical assessment details:
