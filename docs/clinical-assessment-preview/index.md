@@ -9,7 +9,7 @@ permalink: /docs/clinical-assessment-preview/
 
 This dataset preview supports evaluation of whether voice and multimodal models can move beyond transcription into clinical assessment. Each visit contains real, long-duration medical conversation between a physician, patient, and caregiver, paired with structured clinician-reported outcomes, or ClinROs: scores produced by the physician during or immediately after the visit.
 
-The core task is to convert real-world clinical dialogue into the kinds of measurements used in care and clinical trials. Some assessments are direct response tasks, where the model must identify answers and assign structured ratings. Others require clinical judgment: the model must follow a long interview, weigh patient and caregiver responses, and map the conversation onto a clinical rubric.
+The core task is to convert real-world clinical dialogue into the kinds of measurements used in care and clinical trials. Some assessments are direct response tasks, where the doctor asks simple questions with yes, no, or multiple-choice answers. Others require clinical judgment: the doctor conducts a long interview, weighs patient and caregiver responses, and maps the conversation onto a clinical rubric to diagnose or score the patient.
 
 This makes the dataset useful for training and evaluating models on a clinically important category of work: generating structured outcomes from real medical encounters. Models must listen across long visits, track multiple speakers and informants, and produce outputs that can be scored against physician ground truth.
 
