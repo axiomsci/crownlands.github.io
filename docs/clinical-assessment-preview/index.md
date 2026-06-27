@@ -5,17 +5,19 @@ permalink: /docs/clinical-assessment-preview/
 ---
 
 # Crownlands - Clinical Assessment and Outcomes Voice Data (Preview)
-<h5>Long-form clinician-patient-caregiver visits with physician-scored clinical outcomes.</h5>
+<h5>Long-form clinician-patient-caregiver visits with physician-scored clinician-reported outcomes.</h5>
 
-This dataset preview is designed for AI labs evaluating whether voice and multimodal models can move beyond transcription into clinical assessment. Each visit contains natural, long-duration medical conversation between a physician, patient, and caregiver, paired with structured scores produced by the physician during the visit.
+This dataset preview supports evaluation of whether voice and multimodal models can move beyond transcription into clinical assessment. Each visit contains natural, long-duration medical conversation between a physician, patient, and caregiver, paired with structured clinician-reported outcomes, or ClinROs: scores produced by the physician during or immediately after the visit.
 
 The core task is to convert messy clinical dialogue into the kinds of measurements used in care and clinical trials. Some assessments are direct scoring tasks, where the model must identify answers and assign structured ratings. Others require clinical judgment: the model must follow a long interview, weigh patient and caregiver responses, and map the conversation onto a clinical rubric.
 
-This makes the dataset useful for training and evaluating models on three capabilities that matter for medical AI: listening across long encounters, tracking multiple speakers and informants, and producing clinically meaningful outputs with physician-scored ground truth.
+This makes the dataset useful for training and evaluating models on a clinically important category of work: generating structured outcomes from real medical encounters. Models must listen across long visits, track multiple speakers and informants, and produce outputs that can be scored against physician ground truth.
 
-**What to know:** This dataset is a trove of long-duration patient visits where a doctor assesses a patient's health in a structured way. Along with real-world medical conversation, these interactions have hard outcomes. In patient care and in clinical trials, clinical scoring systems are used to standardize diagnostic staging and measure longitudinal progression. This dataset contains recorded visits where a physician scores patients on these metrics. This is a task that should be trained - correct measurement requires the application of clinical judgement, and the administration and grading of these cognitive assessments are near-term steps towards AI doctors holistically diagnosing patients. 
+**Why this matters:** ClinROs train core skills of doctoring. Doctors talk with patients to help patients understand their health and to gather the information needed for care. ClinROs are a verifiable training set for the second purpose, clinical information gathering.
 
-**Training Goal:** This dataset trains (voice) models on clinical conduct with patients and how physicians assess patient symptoms and behavior. Improvement on the clinical assessment task requires careful objective scoring of responses and holistic clinical judgement.
+In this dataset, the physician interacts with the patient over 1-3 hours, elicits symptom reports from the patient and caregiver, interprets the patient's health status, and turns the visit into a structured clinical report.
+
+These measurements are used daily in patient triage, longitudinal monitoring, specialist assessment, and clinical trials. For model training and evaluation, this ClinRO dataset offers audio- or transcript-based tasks that are clinically meaningful, self-contained, and verifiable.
 
 #### In this dataset preview:
 
@@ -25,18 +27,17 @@ This makes the dataset useful for training and evaluating models on three capabi
 | Speakers | Physician, patient, caregiver |
 | Duration | Approximately 2-3 hours per visit |
 | Assessments | Three clinical assessments per visit |
-| Labels | Physician-scored ground truth |
-| Modalities | Audio, with timestamped transcripts where available |
+| Labels | Physician-scored ground truth; physician contemporaneous notes; cognitive-disease blood biomarkers available on request |
+| Modalities | Audio; speaker-resolved transcripts |
 
 Each recording contains three clinical/cognitive assessments, conducted as structured interviews. Two are scoring tasks with direct yes/no or choice-based responses. The longest task is a clinical judgment task, where the physician uses a structured interview and expert interpretation to assign final symptom ratings.
 
 #### Assessment Tasks:
 
-| Assessment | What it measures | Why it matters |
+| Task type | Assessments | Description |
 | --- | --- | --- |
-| NPI-Q | Caregiver-reported neuropsychiatric symptoms | Tests whether a model can track caregiver observations and convert them into structured symptom ratings |
-| GDS | Patient-reported depression symptoms | Tests whether a model can follow short clinical screening questions and score patient responses |
-| CDR | Dementia staging through physician judgment | Tests whether a model can reason across a long interview and map evidence to a clinical rubric |
+| Scoring tasks | GDS, NPI-Q | Document responses on patient- and caregiver-reported neuropsychiatric symptoms, respectively |
+| Clinical judgement task | CDR | Long interview which requires clinical interpretation to report dementia staging across six metrics |
 
 Sample medical assessment details:
 
@@ -67,7 +68,9 @@ Sample medical assessment details:
 
 
 #### Sample Download:
-The preview sample includes nine scored clinical assessments across three patients, with one complete, de-identified clinical visit recording per patient. Each recording includes audio. Timestamped transcripts with tracked speaker labels are included where available, but the full transcript and speaker attribution are not guaranteed.
+The preview sample includes nine scored ClinRO assessments across three patients, with the complete, de-identified clinical visit recordings.
+
+Timestamped transcripts with tracked speaker labels are included, but the full transcript and speaker attribution are not guaranteed.
 
 Sample cases:
 
