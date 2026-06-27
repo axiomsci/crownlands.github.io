@@ -27,7 +27,7 @@ These measurements are used daily in patient triage, longitudinal monitoring, sp
 | Speakers | Physician, patient, caregiver |
 | Duration | Approximately 2-3 hours per visit |
 | Assessments | Three clinical assessments per visit |
-| Labels | Physician-scored ground truth; physician contemporaneous notes; cognitive-disease blood biomarkers available on request |
+| Labels | Physician-scored ground truth; physician contemporaneous notes; diagnostic biomarkers available on request, including blood and neuroimaging |
 | Modalities | Audio; speaker-resolved transcripts |
 
 Each recording contains three clinical/cognitive assessments, conducted as structured interviews. Two are direct response tasks with direct yes/no or choice-based responses. The longest task is a clinical judgment task, where the physician uses a structured interview and expert interpretation to assign final symptom ratings.
@@ -37,7 +37,7 @@ Each recording contains three clinical/cognitive assessments, conducted as struc
 | Task type | Assessments | Description |
 | --- | --- | --- |
 | Direct response tasks | GDS, NPI-Q | Document responses on patient- and caregiver-reported neuropsychiatric symptoms, respectively |
-| Clinical judgement task | CDR | Long interview which requires clinical interpretation to report dementia staging across six metrics |
+| Clinical judgment task | CDR | Long interview which requires clinical interpretation to report dementia staging across six metrics |
 
 Sample medical assessment details:
 
@@ -58,11 +58,11 @@ Sample medical assessment details:
 </details>
 
 <details>
-  <summary>Clinical Judgement Task: <b>CDR</b> </summary>
+  <summary>Clinical Judgment Task: <b>CDR</b> </summary>
   <br>
   The Clinical Dementia Rating (CDR) Scale stages dementia and Alzheimer's disease. It is the primary outcome measurement in most late-stage clinical trials of Alzheimer's disease therapeutics.<br><br>
-  The CDR requires a trained clinician to administer, interpret, and score. It is conducted in a structured interview with the patient and the <i>informant</i> (the patient's caregiver). It follows a standardized format but the clinician asks follow-up questions or changes the flow based on the conversation. The notetaking standard has ~100 fields, including yes/no, likert questions, and short written notes.<br><br>
-  Clinical judgement is used to turn these interviews into a final score, which uses a 6-category rubric. For example, "Memory" is rated 0 for "No memory loss, or slight inconsistent forgetfulness," 0.5 for "Consistent slight forgetfulness; partial recollection of events; "benign" forgetfulness," ..., 2 for "Severe memory loss; only highly learned material retained; new material rapidly lost," and 3 for "Severe memory loss; only fragments remain." You can see the rubric (here)[https://knightadrc.wustl.edu/app/uploads/2021/06/CDR-Table.pdf]. These six scores or "boxes" can be converted into a final score, for example with a sum (sum of boxes, CDR-SB).<br><br>
+  The CDR requires a trained clinician to administer, interpret, and score. It is conducted in a structured interview with the patient and the <i>informant</i> (the patient's caregiver). It follows a standardized format but the clinician asks follow-up questions or changes the flow based on the conversation. The notetaking standard has ~100 fields, including yes/no, Likert questions, and short written notes.<br><br>
+  Clinical judgment is used to turn these interviews into a final score, which uses a 6-category rubric. For example, "Memory" is rated 0 for "No memory loss, or slight inconsistent forgetfulness," 0.5 for "Consistent slight forgetfulness; partial recollection of events; "benign" forgetfulness," ..., 2 for "Severe memory loss; only highly learned material retained; new material rapidly lost," and 3 for "Severe memory loss; only fragments remain." You can see the rubric [here](https://knightadrc.wustl.edu/app/uploads/2021/06/CDR-Table.pdf). These six scores or "boxes" can be converted into a final score, for example with a sum (sum of boxes, CDR-SB).<br><br>
   The CDR takes 50-75 minutes to administer. 
 </details>
 
@@ -82,15 +82,15 @@ Sample cases:
 
 Each assessment is conducted and scored by a highly trained, experienced physician, with ground truth available for every assessment.
 
-The sample is delivered as a data file, available after a privacy agreement, and a Python evaluation package. In the evaluation package, audio and transcripts can be subsegmented by assessment task and scored against ground truth.
+The sample is delivered as a downloadable data package, available after a privacy agreement, and a Python evaluation package. In the evaluation package, audio and transcripts can be subsegmented by assessment task and scored against ground truth.
 
 Please contact your organization's point of contact with Crownlands if you do not have the org-specific download link.
 
 
 #### Health Data Provenance and Privacy: 
-This dataset contains de-identified data from real patients discussing their own cases with a physician. All data is shared safely and with patient consent. Crownlands cares about transparency of the data chain-of-custody. 
+This dataset contains de-identified data from real patients discussing their own cases with a physician. Data are de-identified before release and shared only with users who complete the required privacy agreement and agree not to attempt re-identification. Crownlands cares about transparency of the data chain-of-custody. 
 
-In this dataset, the human health data is "first-party" - meaning Crownlands sponsored and generated the data and is providing the data to users.
+"First-party" means Crownlands sponsored the study, generated the dataset, and maintains the chain of custody from consent through de-identification and release.
 
 Per Crownlands policy, all users must agree not to attempt re-identification of the patients or speakers in order to access the dataset.
 
