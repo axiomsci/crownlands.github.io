@@ -36,8 +36,8 @@ Each recording contains three clinical/cognitive assessments, conducted as struc
 
 | Task type | Assessments | Description |
 | --- | --- | --- |
-| Direct response tasks | GDS, NPI-Q | Document responses on patient- and caregiver-reported neuropsychiatric symptoms, respectively |
-| Clinical judgment task | CDR | Long interview which requires clinical interpretation to report dementia staging across six metrics |
+| Direct response tasks | GDS, NPI-Q | Record structured patient and caregiver responses and convert them into scored symptom fields |
+| Clinical judgment task | CDR | Interpret a long patient and caregiver interview to score dementia symptom scores across six domains |
 
 Sample medical assessment details:
 
