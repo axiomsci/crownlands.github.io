@@ -9,7 +9,7 @@ permalink: /docs/clinical-assessment-preview/
 
 This dataset preview supports evaluation of whether voice and multimodal models can move beyond transcription into clinical assessment. Each visit contains real, long-duration medical conversation between a physician, patient, and caregiver, paired with structured clinician-reported outcomes, or ClinROs: scores produced by the physician during or immediately after the visit.
 
-The core task is to convert real-world clinical dialogue into the kinds of measurements used in care and clinical trials. Some assessments are extraction tasks, where the model must identify answers and assign structured ratings. Others require clinical judgment: the model must follow a long interview, weigh patient and caregiver responses, and map the conversation onto a clinical rubric.
+The core task is to convert real-world clinical dialogue into the kinds of measurements used in care and clinical trials. Some assessments are direct response tasks, where the model must identify answers and assign structured ratings. Others require clinical judgment: the model must follow a long interview, weigh patient and caregiver responses, and map the conversation onto a clinical rubric.
 
 This makes the dataset useful for training and evaluating models on a clinically important category of work: generating structured outcomes from real medical encounters. Models must listen across long visits, track multiple speakers and informants, and produce outputs that can be scored against physician ground truth.
 
@@ -30,19 +30,19 @@ These measurements are used daily in patient triage, longitudinal monitoring, sp
 | Labels | Physician-scored ground truth; physician contemporaneous notes; cognitive-disease blood biomarkers available on request |
 | Modalities | Audio; speaker-resolved transcripts |
 
-Each recording contains three clinical/cognitive assessments, conducted as structured interviews. Two are extraction tasks with direct yes/no or choice-based responses. The longest task is a clinical judgment task, where the physician uses a structured interview and expert interpretation to assign final symptom ratings.
+Each recording contains three clinical/cognitive assessments, conducted as structured interviews. Two are direct response tasks with direct yes/no or choice-based responses. The longest task is a clinical judgment task, where the physician uses a structured interview and expert interpretation to assign final symptom ratings.
 
 #### Assessment Tasks:
 
 | Task type | Assessments | Description |
 | --- | --- | --- |
-| Extraction tasks | GDS, NPI-Q | Document responses on patient- and caregiver-reported neuropsychiatric symptoms, respectively |
+| Direct response tasks | GDS, NPI-Q | Document responses on patient- and caregiver-reported neuropsychiatric symptoms, respectively |
 | Clinical judgement task | CDR | Long interview which requires clinical interpretation to report dementia staging across six metrics |
 
 Sample medical assessment details:
 
 <details>
-  <summary>Scoring Task A: <b>NPI-Q</b> </summary>
+  <summary>Direct Response Task A: <b>NPI-Q</b> </summary>
   <br>
   The Neuropsychiatric Inventory Questionnaire (NPI-Q) is a brief, informant-based tool used by clinicians to assess behavioral and psychological symptoms in patients with dementia and evaluate caregiver distress.<br><br>
   The NPI-Q asks the <i>informant</i> (the patient's caregiver) about 12 symptoms. Each is either rated absent (No), or present (Yes), in which case its severity is rated on a 3-point scale and the caregiver's distress is rated on a 5-point scale.<br><br>
@@ -50,7 +50,7 @@ Sample medical assessment details:
 </details>
 
 <details>
-  <summary>Scoring Task B: <b>GDS</b> </summary>
+  <summary>Direct Response Task B: <b>GDS</b> </summary>
   <br>
   The Geriatric Depression Scale (GDS) is a self-report screening tool to identify depressive symptoms in older adults.<br><br>
   The GDS is 15 yes or no questions. Elaboration isn't required, but since these are real clinical visits, patients often volunteer descriptions or thought processes.<br><br>
