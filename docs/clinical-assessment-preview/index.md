@@ -42,19 +42,19 @@ Each recording contains three clinical/cognitive assessments, conducted as struc
 Sample medical assessment details:
 
 <details>
-  <summary>Direct Response Task A: <b>NPI-Q</b> </summary>
-  <br>
-  The Neuropsychiatric Inventory Questionnaire (NPI-Q) is a brief, informant-based tool used by clinicians to assess behavioral and psychological symptoms in patients with dementia and evaluate caregiver distress.<br><br>
-  The NPI-Q asks the <i>informant</i> (the patient's caregiver) about 12 symptoms. Each is either rated absent (No), or present (Yes), in which case its severity is rated on a 3-point scale and the caregiver's distress is rated on a 5-point scale.<br><br>
-  The NPI-Q takes 3-8 minutes to administer.
-</details>
-
-<details>
-  <summary>Direct Response Task B: <b>GDS</b> </summary>
+  <summary>Direct Response Task A: <b>GDS</b> </summary>
   <br>
   The Geriatric Depression Scale (GDS) is a self-report screening tool to identify depressive symptoms in older adults.<br><br>
   The GDS is 15 yes or no questions. Elaboration isn't required, but since these are real clinical visits, patients often volunteer descriptions or thought processes.<br><br>
   The GDS takes 2-3 minutes to administer.
+</details>
+
+<details>
+  <summary>Direct Response Task B: <b>NPI-Q</b> </summary>
+  <br>
+  The Neuropsychiatric Inventory Questionnaire (NPI-Q) is a brief, informant-based tool used by clinicians to assess behavioral and psychological symptoms in patients with dementia and evaluate caregiver distress.<br><br>
+  The NPI-Q asks the <i>informant</i> (the patient's caregiver) about 12 symptoms. Each is either rated absent (No), or present (Yes), in which case its severity is rated on a 3-point scale and the caregiver's distress is rated on a 5-point scale.<br><br>
+  The NPI-Q takes 3-8 minutes to administer.
 </details>
 
 <details>
